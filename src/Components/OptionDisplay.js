@@ -5,7 +5,6 @@ import { setDisplayCountry } from "../redux/slices/displayCountrySlice";
 
 const OptionDisplay = () => {
   const currentPotentials = useSelector(selectPotentials);
-  console.log(currentPotentials);
 
   const dispatch = useDispatch();
 

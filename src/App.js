@@ -10,13 +10,10 @@ function App() {
   let potentials = useSelector(selectPotentials);
   let currentDisplay = useSelector(selectDisplay);
 
-  console.log("Search List", potentials);
-  console.log("Display Details", currentDisplay);
-
   return (
     <div className="App font-link">
       <Header />
-      <OptionDisplay />
+      {currentDisplay ? <MainDisplay /> : <OptionDisplay />}
     </div>
   );
 }
