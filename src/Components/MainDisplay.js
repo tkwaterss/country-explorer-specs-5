@@ -9,8 +9,6 @@ const MainDisplay = () => {
   const [view, setView] = useState("Overview");
     const currentDisplay = useSelector(selectDisplay)
 
-    console.log(currentDisplay)
-
   return (
     <div className="stack">
       <div className="tab-select">
